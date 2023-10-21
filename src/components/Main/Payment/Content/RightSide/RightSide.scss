@@ -1,0 +1,10 @@
+.right-side-payment {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+@media only screen and (max-width: 850px) {
+  .right-side-payment {
+    width: 75%;
+  }
+}

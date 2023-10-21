@@ -1,0 +1,82 @@
+.chooser {
+  padding: 16px;
+  width: 31.6%;
+  background-color: rgb(34, 34, 34);
+  border-radius: 2px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  ul {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    li {
+      width: 100%;
+      padding: 12px;
+      font-family: Lato;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      color: rgba(239, 244, 254, 1);
+      border-radius: 2px;
+      &:hover {
+        background-color: #121212;
+      }
+    }
+    .selected {
+      background-color: #121212;
+      color: #d58b0e;
+    }
+  }
+  .line {
+    width: 100%;
+    height: 1px;
+    border: 3px solid;
+    border-image: conic-gradient(
+        #d58b0e,
+        #d58b0e,
+        #d58b0e,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        #d58b0e,
+        #d58b0e,
+        #d58b0e
+      )
+      1;
+  }
+  button {
+    width: 100%;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: rgba(255, 69, 58, 1);
+    background-color: transparent;
+    border: none;
+    padding: 12px;
+    text-align: start;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .chooser {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .chooser {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .chooser {
+    width: 100%;
+  }
+}

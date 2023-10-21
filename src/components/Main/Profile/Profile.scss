@@ -1,0 +1,21 @@
+.profile-section {
+  padding-top: 117px;
+  width: 100%;
+  .profile-section-container {
+    padding: 60px;
+    display: flex;
+    gap: 24px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .profile-section {
+    .profile-section-container {
+      flex-direction: column;
+      padding: 0;
+      padding-bottom: 24px;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+    }
+  }
+}

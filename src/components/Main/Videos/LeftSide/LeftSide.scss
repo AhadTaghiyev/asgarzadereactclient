@@ -1,0 +1,22 @@
+.left-content {
+  width: 31.2%;
+  margin-top: 117px;
+}
+.left-content.visible-section {
+  opacity: 1;
+  display: block;
+  height: auto;
+  top: 0;
+  transform: translateY(0);
+}
+@media only screen and (max-width: 750px) {
+  .left-content {
+    width: 100%;
+    position: absolute;
+    display: none;
+    opacity: 0;
+    height: 0;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+}

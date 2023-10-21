@@ -1,0 +1,110 @@
+.subscribe {
+  padding: 30px 0;
+  width: 100%;
+  .subscribe-container {
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    &_head {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      h5 {
+        color: white;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 43.88px;
+      }
+      p {
+        color: white;
+        font-size: 16px;
+        line-height: 19.2px;
+      }
+    }
+    &_field {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      span {
+        color: white;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: 17.07px;
+      }
+      .input-field {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        input {
+          width: 71%;
+          background-color: transparent;
+          border-radius: 2px 0 0 2px;
+          padding: 12px 12px;
+          color: white;
+          border: 3px solid rgba(192, 118, 0, 1);
+          border-right: 0;
+        }
+        input[type="text"]:focus {
+          outline: none;
+        }
+        button {
+          border-radius: 0 2px 2px 0 !important;
+          background-color: rgba(192, 118, 0, 1);
+          color: white;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .subscribe {
+    .subscribe-container {
+      &_field {
+        width: 60%;
+        .input-field {
+          input {
+            width: 66%;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 950px) {
+  .subscribe {
+    .subscribe-container {
+      &_field {
+        width: 100%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 650px) {
+  .subscribe {
+    .subscribe-container {
+      padding: 0;
+    }
+  }
+}
+@media only screen and (max-width: 550px) {
+  .subscribe {
+    .subscribe-container {
+      &_head {
+        h5 {
+          font-size: 32px;
+          line-height: 40px;
+        }
+      }
+      &_field {
+        .input-field {
+          input {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}

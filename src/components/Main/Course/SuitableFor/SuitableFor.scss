@@ -1,0 +1,37 @@
+.suitable-for-course {
+  padding: 30px 0;
+  width: 100%;
+  .suitable-for-container {
+    width: 66%;
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 16px;
+    h3 {
+      font-family: Lato;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 32px;
+      letter-spacing: 0.24px;
+    }
+    li {
+      list-style: disc;
+      font-family: Lato;
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 0.16px;
+      color: rgba(185, 185, 185, 1);
+      font-family: Lato;
+      font-weight: 400;
+    }
+  }
+}
+@media only screen and (max-width: 650px) {
+   .suitable-for-course {
+    .suitable-for-container {
+      width: 100%;
+      padding: 0px;
+    }
+  }
+}

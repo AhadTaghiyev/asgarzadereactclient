@@ -1,0 +1,318 @@
+.edit-profile {
+  background-color: rgba(34, 34, 34, 1);
+  width: 68.4%;
+  display: flex;
+  padding: 24px;
+  align-items: flex-start;
+  gap: 24px;
+  // height: 806px;
+  &_picture {
+    padding-top: 56px;
+    height: 100%;
+    padding-right: 23px;
+    border: 1px solid;
+    border-width: 0 1px 0 0;
+    border-image: conic-gradient(
+        transparent,
+        #d58b0e,
+        #d58b0e,
+        #d58b0e,
+        #d58b0e,
+        #d58b0e,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent
+      )
+      1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+    .upload {
+      cursor: pointer;
+      display: flex;
+      gap: 4px;
+      align-items: center;
+      span {
+        cursor: pointer;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.14px;
+        color: rgba(213, 139, 14, 1);
+      }
+    }
+  }
+  &_editable_area {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    &_profile {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      h5 {
+        font-family: Lato;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px;
+        letter-spacing: 0.24px;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+    }
+    &_linked-accounts {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      h5 {
+        font-family: Lato;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px;
+        letter-spacing: 0.24px;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        li {
+          display: flex;
+          padding: 12px 16px;
+          background-color: rgba(42, 42, 42, 1);
+          border-radius: 2px;
+          justify-content: space-between;
+          align-items: center;
+          gap: 12px;
+          .link {
+            color: #fff;
+            font-family: Lato;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 0.16px;
+          }
+          .link-account {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            span {
+              font-family: Montserrat;
+              font-size: 16px;
+              color: rgba(232, 163, 69, 1);
+              font-weight: 500;
+              line-height: normal;
+              letter-spacing: 0.16px;
+            }
+          }
+        }
+      }
+    }
+    &_notifications {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      h5 {
+        font-family: Lato;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px;
+        letter-spacing: 0.24px;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        li {
+          display: flex;
+          gap: 16px;
+          align-items: center;
+          p {
+            width: 500px;
+            color: #fff;
+            font-family: Lato;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 0.16px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .edit-profile {
+    width: 65.4%;
+    &_editable_area {
+      width: 77%;
+      &_notifications {
+        ul {
+          li {
+            label {
+              width: 24%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .edit-profile {
+    width: 50%;
+    height: 1001px;
+    padding: 16px;
+    flex-direction: column;
+    &_picture {
+      padding: 16px 0 40px 0;
+      width: 100%;
+      border: 1px solid;
+      border-width: 0 0 1px 0;
+      border-image: conic-gradient(
+          transparent,
+          transparent,
+          transparent,
+          transparent,
+          transparent,
+          #d58b0e,
+          #d58b0e,
+          #d58b0e,
+          transparent,
+          transparent,
+          transparent,
+          transparent,
+          transparent
+        )
+        1;
+    }
+    &_editable_area {
+      width: 100%;
+      &_notifications {
+        ul {
+          li {
+            label {
+              width: 33%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 950px) {
+  .edit-profile {
+    height: 1040px;
+    &_editable_area {
+      &_notifications {
+        ul {
+          li {
+            label {
+              width: 46%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 850px) {
+  .edit-profile {
+    width: 60%;
+    height: 1001px;
+    &_editable_area {
+      &_notifications {
+        ul {
+          li {
+            label {
+              width: 27%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 750px) {
+  .edit-profile {
+    height: 1020px;
+    &_editable_area {
+      &_notifications {
+        ul {
+          li {
+            label {
+              width: 39%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 650px) {
+  .edit-profile {
+    height: 976px;
+    width: 100%;
+    &_editable_area {
+      &_notifications {
+        ul {
+          li {
+            label {
+              width: 17%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 550px) {
+  .edit-profile {
+    height: 1001px;
+    &_editable_area {
+      &_notifications {
+        ul {
+          li {
+            label {
+              width: 30%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 450px) {
+  .edit-profile {
+    height: 1020px;
+    &_editable_area {
+      &_notifications {
+        ul {
+          li {
+            label {
+              width: 40%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

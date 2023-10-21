@@ -1,0 +1,115 @@
+.hero_section-courses {
+  padding-top: 135px;
+  width: 100%;
+  .main-hero-courses {
+    display: flex;
+    background: linear-gradient(
+      to bottom,
+      rgba(18, 18, 18, 1),
+      rgba(35, 35, 35, 1)
+    );
+    &-left {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 100px;
+      padding: 83px 60px;
+      .texts {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        h1 {
+          font-size: 48px;
+          font-weight: 700;
+          line-height: 60px;
+          letter-spacing: 0em;
+        }
+        p {
+          font-size: 20px;
+          line-height: 26px;
+          letter-spacing: 0em;
+        }
+      }
+      .button-courses {
+        border: 3px solid rgba(213, 139, 14, 1);
+        border-radius: 2px;
+        padding: 5px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 226px;
+        span {
+          font-size: 20px;
+          font-weight: 700;
+          color: white;
+          line-height: 24.38px;
+        }
+        img {
+          padding: 5px;
+        }
+        &:hover {
+          border-color: rgba(142, 79, 0, 1);
+        }
+      }
+    }
+    &-right {
+      width: 50%;
+      position: relative;
+      img {
+      width: 100%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .hero_section-courses {
+    .main-hero-courses {
+      &-right {
+        img {
+          top: 110px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 950px) {
+  .hero_section-courses {
+    .main-hero-courses {
+      &-left {
+        width: 100%;
+      }
+      &-right {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .hero_section-courses {
+    .main-hero-courses {
+      &-left {
+        padding: 10px;
+        .texts {
+          h1 {
+            font-size: 40px;
+            line-height: 48px;
+          }
+          p {
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 450px) {
+  .hero_section-courses {
+    padding-top: 120px;
+    .container {
+      margin: 0;
+      width: auto;
+    }
+  }
+}

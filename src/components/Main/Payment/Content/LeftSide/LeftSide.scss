@@ -1,0 +1,19 @@
+.left-side-payment {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+@media only screen and (max-width: 850px) {
+  .left-side-payment {
+    width: 75%;
+  }
+}
+@media only screen and (max-width: 650px) {
+   .left-side-payment {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 550px) {
+}
+@media only screen and (max-width: 450px) {
+}

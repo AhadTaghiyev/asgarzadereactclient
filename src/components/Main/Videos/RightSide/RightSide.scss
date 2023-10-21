@@ -1,0 +1,9 @@
+.right-content {
+  width: 68.8%;
+  margin-top: 117px;
+}
+@media only screen and (max-width: 750px) {
+  .right-content {
+    width: 100%;
+  }
+}

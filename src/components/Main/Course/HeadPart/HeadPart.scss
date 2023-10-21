@@ -1,0 +1,62 @@
+.head-part-course {
+  padding: 60px 0 30px 0;
+  width: 100%;
+  .head-part-container {
+    width: 66%;
+    padding-left: 60px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    .texts {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      p {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+        letter-spacing: 0.24px;
+      }
+      li {
+        list-style: disc;
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: 0.16px;
+        color: rgba(185, 185, 185, 1);
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .head-part-course {
+    .head-part-container {
+      width: 55%;
+    }
+  }
+}
+@media only screen and (max-width: 950px) {
+  .head-part-course {
+    .head-part-container {
+      width: 50%;
+      flex-direction: column;
+    }
+  }
+}
+@media only screen and (max-width: 850px) {
+  .head-part-course {
+    .head-part-container {
+      width: 44%;
+    }
+  }
+}
+@media only screen and (max-width: 750px) {
+  .head-part-course {
+    padding: 800px 0 30px 0;
+    .head-part-container {
+      width: 100%;
+      padding: 0;
+    }
+  }
+}

@@ -1,0 +1,227 @@
+.cards-courses {
+  padding: 30px 0;
+  width: 100%;
+  .cards-courses-container {
+    padding: 36px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    li {
+      cursor: pointer !important;
+      border: 1px solid rgba(213, 139, 14, 1);
+      border-radius: 1px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 30.45%;
+      transition: 0.5s;
+      overflow: hidden;
+      // &:hover {
+        background-color: rgba(213, 139, 14, 1);
+        .info_card h6,
+        .info_card .price,
+        .info_card .info_card_owner .owner span {
+          color: black !important;
+          cursor: pointer !important;
+        // }
+      }
+      .image-side {
+        position: relative;
+        height: 72%;
+        width: 100%;
+        cursor: pointer !important;
+      
+      }
+      .image-side img{
+        width: 100%;
+        min-height: 300px;
+        max-height: 300px;
+        object-fit: cover;
+        cursor: pointer !important;
+      }
+      .info_card {
+        padding: 10px 19px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer !important;
+        width: 100%;
+        gap: 15px;
+        h6 {
+          font-size: 22px;
+          font-weight: 600;
+          line-height: 26.82px;
+          color: white;
+          text-align: center;
+        }
+        &_owner {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          .owner {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            width: 50%;
+            img {
+              border-radius: 2px;
+              width: 40px;
+              height: 40px;
+              object-fit: cover;
+            }
+            span {
+              color: white;
+              font-size: 16px;
+              line-height: 19.5px;
+            }
+          }
+          .price {
+            color: white;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 29.26px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .cards-courses {
+    .cards-courses-container {
+      li {
+        width: 39%;
+        .info_card {
+          h5 {
+            padding: 9px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .cards-courses {
+    .cards-courses-container {
+      li {
+        width: 43%;
+        .info_card {
+          padding: 20px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 950px) {
+  .cards-courses {
+    .cards-courses-container {
+      li {
+        width: 48%;
+        .info_card {
+          padding: 8px;
+          h6 {
+            text-align: start;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 750px) {
+  .cards-courses {
+    .cards-courses-container {
+      li {
+        width: 47%;
+        height: auto;
+        .image-side {
+          max-width: 100%;
+          height: auto;
+          .main_image {
+            width: 100%;
+          }
+        }
+        .info_card {
+          padding: 8px;
+          h6 {
+            padding: 0;
+            text-align: start;
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 500;
+          }
+          &_owner {
+            .owner {
+              span {
+                font-size: 12px;
+                line-height: 20px;
+              }
+            }
+            .price {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 650px) {
+  .cards-courses {
+    .cards-courses-container {
+      padding: 0;
+    }
+  }
+}
+@media only screen and (max-width: 550px) {
+  .cards-courses {
+    .cards-courses-container {
+      li {
+        .info_card {
+          &_owner {
+            .owner {
+              img {
+                width: 24px;
+                height: 24px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .cards-courses {
+    .cards-courses-container {
+      li {
+        width: 46%;
+        .info_card {
+          h6 {
+            font-size: 12px;
+            line-height: 16px;
+          }
+          &_owner {
+            .owner {
+              span {
+                font-size: 8px;
+                line-height: 12px;
+              }
+              img {
+                width: 21px;
+                height: 21px;
+              }
+            }
+            .price {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

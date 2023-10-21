@@ -1,0 +1,174 @@
+.payment-method-section {
+  width: 100%;
+  padding: 60px 60px 0 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  &_head {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    h5 {
+      font-family: Lato;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 32px;
+      letter-spacing: 0.24px;
+    }
+  }
+  &_options {
+    display: flex;
+    flex-direction: column;
+    li {
+      display: flex;
+      flex-direction: column;
+      .method {
+        border-radius: 2px;
+        background: #222;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 15px 16px;
+        transition: background-color 250ms ease;
+        .radio-label {
+          color: #fff;
+          font-family: Lato;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: normal;
+          letter-spacing: 0.2px;
+        }
+      }
+      .checked {
+        background-color: #2a2a2a;
+      }
+      .method_form {
+        display: none;
+        padding: 24px 56px;
+        flex-direction: column;
+        gap: 16px;
+        .full-inputs {
+          .input {
+            input {
+              width: 61%;
+            }
+          }
+        }
+        .checkbox-side {
+          display: flex;
+          align-items: center;
+          p {
+            color: #fff;
+            font-family: Lato;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: normal;
+          }
+        }
+        .paypal-logo {
+          background-color: rgba(255, 241, 226, 1);
+          border-radius: 2px;
+          padding: 16px;
+          width: 132px;
+        }
+        p {
+          color: #fff;
+          font-family: Lato;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: normal;
+        }
+      }
+      .visible {
+        display: flex;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .payment-method-section {
+    &_options {
+      li {
+        .method_form {
+          padding: 24px;
+          .full-inputs {
+            .input {
+              input {
+                width: 54%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .payment-method-section {
+    &_options {
+      li {
+        .method_form {
+          padding: 24px 0;
+          .full-inputs {
+            .input {
+              .cards {
+                padding: 7px 12px 7px 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 950px) {
+  .payment-method-section {
+    padding: 60px 30px 0 30px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .payment-method-section {
+    &_options {
+      li {
+        .method_form {
+          padding: 24px 56px;
+          .full-inputs {
+            .input {
+              .cards {
+                padding: 7px 12px 7px 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 750px) {
+  .payment-method-section {
+    padding: 30px 0 0 0;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .payment-method-section {
+    &_options {
+      li {
+        .method_form {
+          padding: 24px 20px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 450px) {
+   .payment-method-section {
+    &_options {
+      li {
+        .method_form {
+          padding: 24px;
+        }
+      }
+    }
+  }
+}

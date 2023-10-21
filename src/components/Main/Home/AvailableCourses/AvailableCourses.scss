@@ -1,0 +1,205 @@
+.available-courses {
+  padding: 30px 0;
+  width: 100%;
+  .available-courses-container {
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    &_cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+      li {
+        border: 1px solid rgba(213, 139, 14, 1);
+        background-color: rgba(213, 139, 14, 1);
+        border-radius: 1px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30.45%;
+        height: 446px;
+        transition: 0.5s;
+        overflow: hidden;
+     
+          .info_card h6,
+          .info_card .price,
+          .info_card .info_card_owner .owner span {
+            color: black !important;
+            cursor: pointer;
+          }
+        
+        .image-side {
+          position: relative;
+          height: 72%;
+          width: 100%;
+          cursor: pointer;
+          img{
+            width: 100%;
+            min-height: 330px;
+            max-height: 330px;
+            object-fit: cover;
+            cursor: pointer;
+          }
+          .comingsoon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            button {
+              &:hover {
+                border-color: rgba(142, 79, 0, 1);
+              }
+            }
+          }
+        }
+        .info_card {
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          gap: 15px;
+          cursor: pointer;
+          h6 {
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 26.82px;
+            color: white;
+            text-align: center;
+            cursor: pointer;
+          }
+          h5 {
+            // padding: 9px;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 26.82px;
+            color: white;
+            text-align: center;
+            cursor: pointer;
+          }
+          &_owner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            cursor: pointer;
+            .owner {
+              display: flex;
+              gap: 12px;
+              align-items: center;
+              width: 50%;
+              img {
+                border-radius: 2px;
+              }
+              span {
+                color: white;
+                font-size: 16px;
+                line-height: 19.5px;
+              }
+            }
+            .price {
+              color: white;
+              font-size: 24px;
+              font-weight: 600;
+              line-height: 29.26px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .available-courses {
+    .available-courses-container {
+      &_cards {
+        li {
+          width: 39%;
+          .info_card {
+            h5 {
+              padding: 9px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .available-courses {
+    .available-courses-container {
+      &_cards {
+        li {
+          width: 43%;
+          .info_card {
+            padding: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 950px) {
+  .available-courses {
+    .available-courses-container {
+      &_cards {
+        li {
+          width: 48%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 750px) {
+  .available-courses {
+    .available-courses-container {
+      &_cards {
+        li {
+          width: 68%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 650px) {
+  .available-courses {
+    .available-courses-container {
+      padding: 0;
+      &_cards {
+        li {
+          width: 72%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 550px) {
+  .available-courses {
+    .available-courses-container {
+      &_cards {
+        li {
+          width: 89%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 450px) {
+  .available-courses {
+    .available-courses-container {
+      &_cards {
+        li {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

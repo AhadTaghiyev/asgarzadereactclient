@@ -1,0 +1,361 @@
+.player-side-content {
+  width: 100%;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  .player-side {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    .head {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      .icon-film {
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+      }
+      h5 {
+        color: #f3f3f3;
+        font-family: Lato;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px;
+      }
+    }
+    .video-area {
+      width: 100%;
+      height: 564px;
+      background: #000;
+      video{
+        height: 564px;
+      }
+    }
+    .video-area-2,
+    .video-area-3 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 564px;
+      background: #222;
+      margin: 0 auto;
+      .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        .text {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          span {
+            color: #fff;
+            font-family: Lato;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: 0.16px;
+          }
+          p {
+            color: #fff;
+            font-family: Lato;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: 0.2px;
+          }
+        }
+        .button-info {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          button {
+            background: #c07600;
+            color: #fff;
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 0.16px;
+          }
+          p {
+            color: #fff;
+            font-family: Lato;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: 0.16px;
+          }
+        }
+      }
+    }
+    .video-area-3 {
+      .info {
+        button {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          background: #c07600;
+          color: #fff;
+          font-family: Montserrat;
+          font-size: 16px;
+          font-weight: 500;
+          letter-spacing: 0.16px;
+        }
+      }
+    }
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      button {
+        background-color: transparent;
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        color: #f3f3f3;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+        .icon-right {
+          width: 24px;
+          height: 24px;
+        }
+      }
+      .download-button {
+        color: #c07600;
+        font-size: 16px;
+        line-height: normal;
+        letter-spacing: 0.16px;
+      }
+    }
+  }
+  .notes {
+    padding: 0 159px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    .written-notes {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      h5 {
+        color: #c07600;
+        font-family: Lato;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.24px;
+      }
+      .notes-area {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        li {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          span {
+            color: #939393;
+            font-family: Lato;
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 0.12px;
+          }
+          .note {
+            border-radius: 2px;
+            background: #222;
+            display: flex;
+            padding: 16px;
+            align-items: flex-start;
+            gap: 16px;
+            textarea {
+              outline: none;
+              resize: none;
+              overflow: hidden;
+              width: 100%;
+              padding: 10px 12px;
+              border-radius: 2px;
+              border: 2px solid #c07600;
+              background-color: transparent;
+              color: #fff;
+              font-family: Lato;
+              font-size: 16px;
+              font-weight: 500;
+              letter-spacing: 0.48px;
+              &:focus {
+                background-color: #222222;
+              }
+            }
+            p {
+              width: 100%;
+              color: #f3f3f3;
+              font-family: Lato;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 24px;
+              letter-spacing: 0.28px;
+            }
+            .right-side {
+              display: flex;
+              height: 100%;
+              flex-direction: column;
+              align-items: flex-start;
+              gap: 16px;
+              flex-shrink: 0;
+              padding-left: 16px;
+              border: 1px solid;
+              border-width: 0 0 0 1px;
+              border-image: conic-gradient(
+                  transparent,
+                  transparent,
+                  transparent,
+                  transparent,
+                  transparent,
+                  transparent,
+                  transparent,
+                  transparent,
+                  #d58b0e,
+                  #d58b0e,
+                  #d58b0e,
+                  transparent,
+                  transparent
+                )
+                1;
+              .icon-trash,
+              .icon-edit {
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+    .new-note {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 24px;
+      width: 100%;
+      textarea {
+        outline: none;
+        resize: none;
+        overflow: hidden;
+        width: 100%;
+        height: 172px;
+        padding: 10px 12px;
+        border-radius: 2px;
+        border: 2px solid #c07600;
+        background-color: transparent;
+        color: #fff;
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0.48px;
+        &:focus {
+          background-color: #222222;
+        }
+      }
+      button {
+        background: #c07600;
+        color: #fff;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0.16px;
+      }
+    }
+  }
+  .see-parts {
+    display: none;
+    background-color: transparent;
+    color: #c07600;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.16px;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .player-side-content {
+    .notes {
+      padding: 0;
+    }
+  }
+}
+@media only screen and (max-width: 950px) {
+  .player-side-content {
+    .player-side {
+      .head {
+        h5 {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 750px) {
+  .player-side-content {
+    .player-side {
+      .video-area,
+      .video-area-2,
+      .video-area-3 {
+        height: 450px;
+      }
+    }
+    .see-parts {
+      display: block;
+    }
+  }
+}
+@media only screen and (max-width: 550px) {
+  .player-side-content {
+    .player-side {
+      .video-area,
+      .video-area-2,
+      .video-area-3 {
+        height: 400px;
+      }
+      .buttons {
+        flex-direction: column;
+        gap: 16px;
+        button {
+          width: 100%;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 450px) {
+  .player-side-content {
+    .head {
+      h5 {
+        font-size: 24px;
+      }
+    }
+    .player-side {
+      .video-area,
+      .video-area-2,
+      .video-area-3 {
+        width: 330px;
+        height: 241px;
+      }
+      .buttons {
+        flex-direction: column;
+        gap: 16px;
+        button {
+          width: 100%;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

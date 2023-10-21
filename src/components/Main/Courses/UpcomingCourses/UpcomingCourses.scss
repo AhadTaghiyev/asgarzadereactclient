@@ -1,0 +1,170 @@
+.upcoming-courses {
+  padding: 30px 0;
+  width: 100%;
+  .upcoming-courses-container {
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    &_cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+      li {
+        border: 1px solid rgba(213, 139, 14, 1);
+        border-radius: 1px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30.45%;
+        height: 446px;
+        transition: 0.5s;
+        overflow: hidden;
+        &:hover {
+          background-color: rgba(213, 139, 14, 1);
+          .info_card h6,
+          .info_card .price,
+          .info_card .info_card_owner .owner span {
+            color: black;
+          }
+        }
+        .image-side {
+          position: relative;
+          height: 72%;
+          .comingsoon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+        .info_card {
+          padding: 20px 29px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          gap: 15px;
+          h5 {
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 26.82px;
+            color: white;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .upcoming-courses {
+    .upcoming-courses-container {
+      &_cards {
+        justify-content: center;
+        li {
+          width: 39%;
+          .info_card {
+            h5 {
+              padding: 9px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .upcoming-courses {
+    .upcoming-courses-container {
+      &_cards {
+        li {
+          width: 43%;
+          .info_card {
+            padding: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 950px) {
+  .upcoming-courses {
+    .upcoming-courses-container {
+      &_cards {
+        li {
+          width: 48%;
+          .image-side {
+            .comingsoon {
+              width: 100%;
+              img {
+                width: 70%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 750px) {
+  .upcoming-courses {
+    .upcoming-courses-container {
+      &_cards {
+        justify-content: flex-start;
+        li {
+          width: 47%;
+          height: auto;
+          .image-side {
+            max-width: 100%;
+            height: auto;
+            .main_image {
+              width: 100%;
+            }
+          }
+          .info_card {
+            padding: 8px;
+            h5{
+              padding: 0;
+              text-align: start;
+              font-size: 16px;
+              line-height: 20px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 650px) {
+  .upcoming-courses {
+    .upcoming-courses-container {
+      padding: 0;
+      h2{
+        display: none;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 450px) {
+  .upcoming-courses {
+    .upcoming-courses-container {
+      &_cards {
+        li {
+          width: 46%;
+           .info_card {
+            h5{
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
